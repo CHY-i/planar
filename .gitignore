@@ -1,0 +1,17 @@
+# Data
+
+logs
+*.log
+
+experiment_data/
+experiment_data/google/
+planar/__pycache__
+experiments/__pycache__
+
+experiments/test.py
+experiments/time.py
+experiments/submit1.py
+experiments/mp_decoding.py
+experiments/decoding_google_exp.py
+experiments/script_experiment.py
+experiments/script_noreset.py
