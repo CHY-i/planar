@@ -52,7 +52,7 @@ def decode_subroutine(decoders, error_type, error_rate, trial_num, stabilizers, 
     elif error_type == 'x':
         error_prob = np.array([1-error_rate, error_rate, 0.0, 0.0])
     elif error_type == 'uncorrelated':
-        error_prob = np.array([1-error_rate, error_rate/3, error_rate/3, error_rate/3])
+        error_prob = np.array([(1-error_rate)**2, error_rate(1-error_rate), error_rate(error_rate), error_rate**2])
     else:
         raise ValueError('Unkown error type.')
     rng = np.random.default_rng(int(1000*error_rate))
